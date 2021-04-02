@@ -1,0 +1,36 @@
+准备部分：
+    （1）创建根目录文件夹苏宁 ：css文件夹、images文件夹、upload文件夹。以及index.html文件、index.less文件、normalize.css文件和common.less文件。
+    （2）在common.less文件中进行媒体查询+rem实现元素的动态变化，利用@media设置常用屏幕尺寸的html字体大小。
+    （3）使用@import将common引入到index.less中，给body设置 min-width和rem单位的width,以及相关基础样式。
+     (4)随后使用link将index.less文件生成的index.css文件和normalize.css初始化文件都引入到html文件中，并补全视口标签相关内容。
+hearder部分
+1、搭建项目文件夹H5以及相关文件夹结构：css、upload、images、js文件夹以及index.html；
+2、设置视口标签以及引入初始化样式normalize.css、<script>js文件； 
+3、确定body样式，确定宽度10rem,居中以及字体背景颜色； 
+4、修改cssroot基准font-size值，改为75px；
+5、媒体查询限定屏幕尺寸大于750px时最大的字体大小75px并加！important提权； 
+6、header板块：flex两边确定高宽中间占满；
+7、search板块：a链接转换为块状元素，伪元素加图标
+8、search-fixed板块：粘性定位margin负值隐藏
+轮播图通过swiper框架制作
+nav部分
+给整个盒子设置flex布局，每个小盒子占20%，每个小盒子再按照flex布局，分为上下两部分
+商品部分
+整个模块分四个大盒子
+每个盒子设置主轴方向为y轴
+每个盒子内分别有标题(title)、段落、ul>li*2 组成
+标题段落插入文字，并用链接包含起来
+li>a>img ,插入图片，调整图片大小位置
+nav部分
+footer部分
+  布局：
+  footer盒子里放一个类名为nowlogin的a链接和类名为footernav的盒子；a链接内再放一个p和h2，footernav里放5个a链接。
+  样式：
+  A.给footer设置固定定位以及宽高。
+  B.nowlogin设置flex模式，宽高，透明背景。
+   a.nowlogin里的p设flex:1独占一份儿，用pading-left将p往右边挤挤，设置字体行高文字颜色等样式。
+   b.nowlogin里的h2设置display转换成块级元素，设置宽高、字体样式、背景颜色、圆角边框等样式属性，用margin将h2位置。
+  C.footernav设置flex模式，宽高背景颜色。
+   a.给a设置flex:1，以及display：flex模式，设y轴为主轴，设置侧轴居中，设置字体文字样式。
+   b.给footer里的图片设置宽。
+   c.设置a:hover ，当鼠标经过时，字体颜色和粗细改变。
